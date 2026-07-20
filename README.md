@@ -1,26 +1,26 @@
-﻿# Intelligent Decision-Making Platform
+# Intelligent Decision-Making Platform — Constitutional Foundation
 
-> An explainable, evidence-based platform for researching markets,
-> supporting disciplined decisions, governing execution, and
-> continuously learning from outcomes.
+This package contains Version 0.0.0 of the platform documentation.
 
-## Core Belief
+Start with:
 
-Better decisions come from better understanding—not from chasing
-perfect indicators, perfect strategies, or perfect trades.
+- `docs/000_FOUNDATION.md`
 
-## Mission
+Then read the six adopted resolutions in numerical order.
 
-The platform transforms raw data into observations, observations into
-evidence, evidence into knowledge, and knowledge into disciplined
-decision-making.
+## Installation into the repository
 
-It is designed to evolve from human-assisted research toward
-policy-governed automation while preserving transparency, accountability,
-risk control, and capital preservation.
+Copy the seven Markdown files from `docs/` into the repository's `docs/`
+directory.
 
-## Current Status
+Review the files before committing.
 
-The project is currently in its architecture and foundation phase.
+## Suggested commit
 
-No live trading functionality has been implemented.
+```powershell
+git add docs
+git commit -m "docs: establish Constitutional Foundation (v0.0.0)"
+git tag -a v0.0.0-foundation -m "Constitutional Foundation"
+git push origin main
+git push origin v0.0.0-foundation
+```
