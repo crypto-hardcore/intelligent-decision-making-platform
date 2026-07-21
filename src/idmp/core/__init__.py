@@ -11,6 +11,7 @@ from idmp.core.exceptions import (
     PlanningError,
     PlatformError,
     PolicyError,
+    PolicyEvaluationError,
     ValidationError,
 )
 
@@ -26,4 +27,5 @@ __all__ = [
     "ConnectorError",
     "DecisionError",
     "PolicyError",
+    "PolicyEvaluationError",
 ]
