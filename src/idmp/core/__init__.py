@@ -3,6 +3,7 @@
 from idmp.core.exceptions import (
     ConfigurationError,
     ConnectorError,
+    EvidenceError,
     GovernanceError,
     ObservationError,
     PlanningError,
@@ -15,6 +16,7 @@ __all__ = [
     "ValidationError",
     "ConfigurationError",
     "ObservationError",
+    "EvidenceError",
     "PlanningError",
     "GovernanceError",
     "ConnectorError",

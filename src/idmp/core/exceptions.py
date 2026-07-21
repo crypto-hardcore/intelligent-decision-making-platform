@@ -21,6 +21,10 @@ class ObservationError(PlatformError):
     """Raised when an Observation is invalid or inconsistent."""
 
 
+class EvidenceError(PlatformError):
+    """Raised when Evidence is invalid or inconsistent."""
+
+
 class PlanningError(PlatformError):
     """Raised when an Execution Plan cannot be created safely."""
 
@@ -31,3 +35,5 @@ class GovernanceError(PlatformError):
 
 class ConnectorError(PlatformError):
     """Raised when communication with an external system fails."""
+
+

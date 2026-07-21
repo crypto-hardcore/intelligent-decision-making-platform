@@ -1,5 +1,6 @@
 from dataclasses import FrozenInstanceError
 from datetime import UTC, datetime, timedelta
+from collections.abc import Mapping
 
 import pytest
 
@@ -52,7 +53,9 @@ def test_observation_is_immutable() -> None:
 def test_observation_value_is_deeply_immutable() -> None:
     observation = make_observation(value={"levels": [1, 2, 3]})
 
-    assert observation.value["levels"] == (1, 2, 3)  # type: ignore[index]
+    assert isinstance(observation.value, Mapping)
+    assert observation.value["levels"] == (1, 2, 3)
+
     with pytest.raises(TypeError):
         observation.value["levels"] = (4,)  # type: ignore[index]
 
