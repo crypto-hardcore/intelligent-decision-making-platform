@@ -1,6 +1,7 @@
 """Core domain primitives shared across the platform."""
 
 from idmp.core.exceptions import (
+    AssessmentError,
     ConfigurationError,
     ConnectorError,
     EvidenceError,
@@ -17,6 +18,7 @@ __all__ = [
     "ConfigurationError",
     "ObservationError",
     "EvidenceError",
+    "AssessmentError",
     "PlanningError",
     "GovernanceError",
     "ConnectorError",

@@ -25,6 +25,10 @@ class EvidenceError(PlatformError):
     """Raised when Evidence is invalid or inconsistent."""
 
 
+class AssessmentError(PlatformError):
+    """Raised when an Assessment is invalid or inconsistent."""
+
+
 class PlanningError(PlatformError):
     """Raised when an Execution Plan cannot be created safely."""
 
