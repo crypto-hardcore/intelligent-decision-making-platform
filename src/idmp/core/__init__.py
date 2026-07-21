@@ -4,13 +4,14 @@ from idmp.core.exceptions import (
     AssessmentError,
     ConfigurationError,
     ConnectorError,
+    DecisionError,
     EvidenceError,
     GovernanceError,
     ObservationError,
     PlanningError,
     PlatformError,
+    PolicyError,
     ValidationError,
-    DecisionError,
 )
 
 __all__ = [
@@ -24,4 +25,5 @@ __all__ = [
     "GovernanceError",
     "ConnectorError",
     "DecisionError",
+    "PolicyError",
 ]

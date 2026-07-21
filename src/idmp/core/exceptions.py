@@ -33,6 +33,10 @@ class DecisionError(PlatformError):
     """Raised when a Decision is invalid or inconsistent."""
 
 
+class PolicyError(PlatformError):
+    """Raised when a Policy is invalid or inconsistent."""
+
+
 class PlanningError(PlatformError):
     """Raised when an Execution Plan cannot be created safely."""
 
