@@ -29,6 +29,10 @@ class AssessmentError(PlatformError):
     """Raised when an Assessment is invalid or inconsistent."""
 
 
+class DecisionError(PlatformError):
+    """Raised when a Decision is invalid or inconsistent."""
+
+
 class PlanningError(PlatformError):
     """Raised when an Execution Plan cannot be created safely."""
 
